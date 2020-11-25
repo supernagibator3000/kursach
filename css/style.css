@@ -1,0 +1,127 @@
+.navbar{
+    background:#1b1a1f;
+}
+.nav-link , .navbar-brand{
+    color: #f4f4f4;
+    cursor: pointer;
+}
+.nav-link{
+    margin-right: 1em !important;
+}
+.nav-link:hover{
+    background: #1b1a1f;
+    color: #948d87;
+}
+.navbar-collapse{
+    justify-content: flex-start;
+}
+.navbar-toggler{
+     background:#fff !important;
+}
+.navbar-brand:hover{
+    color: #948d87;
+}
+.dropdown-menu{
+    background: #1b1a1f;
+}
+.dropdown-item{
+    color: #f4f4f4;
+}
+.dropdown-item:hover{
+    background: #1b1a1f;
+    color: #948d87;
+}
+.header{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    position: absolute;
+    min-height: 65%;
+    min-width: 80%;
+    left: 10%;
+    top: 20%;
+    background: #f1f1f1d0;
+}
+.description{
+    position: absolute;
+    top: 22%;
+    left: 12%;
+    margin: auto;
+    padding: 2em;
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+.news{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.news h1{
+    color: #fff;
+    position: relative;
+    left: 12%;
+    padding-top: 2%;
+    max-width: fit-content;
+}
+.news div{
+    position: relative;
+    left: 5%;
+    max-width: 90%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.hardware{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.hardware h1{
+    color: #fff;
+    position: relative;
+    left: 12%;
+    padding-top: 2%;
+    max-width: fit-content;
+}
+.hardware div{
+    position: relative;
+    left: 5%;
+    max-width: 90%;
+}
+.hardware .row{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+}
+.hardware .card{
+    width: 20rem;
+}
+.shift-correction{
+    display: block;
+    position: relative;
+    top: -25px;
+    visibility: hidden;
+}
+
+
+.scrollup{
+    width:50px;
+    height:50px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('../images/scrollup.jpg') no-repeat;
+}
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Raleway', sans-serif;
+}
