@@ -5,20 +5,23 @@
         <title>Материнская плата</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="images/icons/motherboard.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/icons/motherboard.ico" type="image/x-icon">
         
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top ">
             <a class="navbar-brand" href="index.html">
 
-                <img src="images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
+                <img src="./images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +30,7 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Компьютерные комплектующие
+                            Комплектующие
                         </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="processor.html">Процессор</a>
@@ -39,32 +42,100 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#news">Новости</a>
+                        <a class="nav-link" data-value="top" href="#">В начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="about" href="#">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="news" href="#news">Новости</a>
                     </li>
                 </ul>
               
             </div>
         </nav>
 
-        <header class="header" style="background-image: url('images/headerback_motherboard.jpg')">
-            <!-- <div class="overlay"></div> -->
+        <!-- Main text -->
+        <header class="header" style="background-image: url('./images/headerback_motherboard.jpg')">
+            <a class="shift-correction" id="top"></a>
             <div class="container">
-                <div class="description text-left" style="top: 15%; left: 10%;">
-                    <h1><font color="#fff", size="20px">
-                    <b>Материнская плата</b>
-                    </font></h1>
-                </div>
-                
+                <div class="description text-left">
+                    <h1><font color="#fff", size="20px"><b>Материнская плата — </b></font></h1>
+                    <p>основной компонент компьютерной системы, 
+                    плата, на которую устанавливаются или подключаются к ней остальные компоненты. 
+                    Она отвечает за их взаимодействие и правильное функционирование. 
+                    К материнской плате подключатся: процессор, видеокарта, звуковая карта, оперативная память, SSD диск, жестокий диск и другие аппаратные средства.</p>
+                </div>                
             </div>
         </header>
 
-        <header class="news" style="background-image: url('images/headerback_news.jpg');">
+        <!-- Main conten -->
+        <header class="about" style="background-image: url('./images/background_motherboard.jpg');">
+            <a class="shift-correction" id="about"></a>
+            <div class="description-about">
+                <h1><font size="20px">Компоненты</font></h1>
+                <dl class="dl-horizontal">
+                    <dt>Центральный процессор</dt>
+                    <dd>— исполнитель машинных инструкций, часть аппаратного обеспечения компьютера или программируемого логического контроллера. 
+                        Отвечает за выполнение операций, заданных программами.
+                    </dd>
+
+                    <dt>Набор системной логики</dt>
+                    <dd>— набор микросхем, обеспечивающих подключение ЦПУ к ОЗУ и контроллерам периферийных устройств. 
+                        Как правило, современные наборы системной логики строятся на базе "северного" и "южного мостов".
+                    </dd>
+
+                    <dt>Северный мост, MCH (Memory controller hub), системный контроллер</dt>
+                    <dd>— обеспечивает подключение ЦПУ к узлам, использующим высокопроизводительные шины: ОЗУ, графический контроллер.
+                        Для подключения ЦПУ к системному контроллеру могут использоваться такие FSB-шины, как Hyper-Transport и SCI.
+                        Обычно к системному контроллеру подключается ОЗУ. В таком случае он содержит в себе контроллер памяти. 
+                        Таким образом, от типа применённого системного контроллера обычно зависит максимальный объём ОЗУ, а также пропускная способность шины памяти персонального компьютера. 
+                        Но в настоящее время имеется тенденция встраивания контроллера ОЗУ непосредственно в ЦПУ (например, контроллер памяти встроен в процессор в AMD K8 и Intel Core i7), 
+                        что упрощает функции системного контроллера и снижает тепловыделение.
+                        В качестве шины для подключения графического контроллера на современных материнских платах используется PCI Express. 
+                        Ранее использовались общие шины (ISA, VLB, PCI) и шина AGP.
+                    </dd>
+
+                    <dt>Южный мост, ICH (I/O controller hub), периферийный контроллер</dt>
+                    <dd>— содержит контроллеры периферийных устройств (жёсткого диска, Ethernet, аудио), 
+                        контроллеры шин для подключения периферийных устройств (шины PCI,PCI-Express и USB), а также контроллеры шин, 
+                        к которым подключаются устройства, не требующие высокой пропускной способности (LPC - используется для подключения загрузочного ПЗУ; 
+                        также шина LPC используется для подключения мультиконтроллера (англ. Super I/O) - микросхемы, 
+                        обеспечивающей поддержку «устаревших» низкопроизводительных интерфейсов передачи данных: последовательного и параллельного интерфейсов, 
+                        контроллера клавиатуры и мыши). Как правило, северный и южный мосты реализуются в виде отдельных СБИС, однако существуют и одночиповые решения. 
+                        Именно набор системной логики определяет все ключевые особенности материнской платы и то, какие устройства могут подключаться к ней.
+                    </dd>
+                    
+                    <dt>Оперативная память (ОЗУ)</dt>
+                    <dd>— часть системы памяти ЭВМ, в которую процессор может обратиться за одну операцию (jump, move и т. п.). 
+                        Предназначена для временного хранения данных и команд, необходимых процессору для выполнения им операций. 
+                        Оперативная память передаёт процессору данные непосредственно, либо через кеш-память. 
+                        Каждая ячейка оперативной памяти имеет свой индивидуальный адрес.
+                        ОЗУ может изготавливаться как отдельный блок или входить в конструкцию однокристальной ЭВМ или микроконтроллера.
+                    </dd>
+
+                    <dt>Загрузочное ПЗУ</dt>
+                    <dd>— хранит ПО, которое исполняется сразу после включения питания. 
+                        Как правило, загрузочное ПЗУ содержит BIOS, однако может содержать и ПО, работающие в рамках EFI.
+                    </dd>
+                </dl>
+            </div>
+        </header>
+
+        <!-- News -->
+        <header class="news" style="background-image: url('./images/headerback_news.jpg');">
             <a class="shift-correction" id="news"></a>
             <h1><font size="20px"><b>Новости</b></font></h1>
             <div>
                 <rssapp-carousel id="7sJ77VWDcb0qVcxV"></rssapp-carousel>
             </div>
         </header>
+
+        <footer class="page-footer font-small bg-dark" id="sitefooter">
+            <div class="footer-copyright text-center py-3" style="color: aliceblue;">© 2020 Курсовая работа
+                <a href="https://github.com/supernagibator3000/kursach"> Github</a>
+            </div>   
+        </footer>
 
         <a href="#" class="scrollup">Наверх</a>
 
@@ -75,5 +146,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src='js/script.js' type="text/javascript"></script>
         <script src='js/scrollup_script.js' type="text/javascript"></script>
+        <script src='js/scroll.js' type="text/javascript"></script>
     </body>
 </HTML>

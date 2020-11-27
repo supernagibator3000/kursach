@@ -5,19 +5,22 @@
         <title>Процессор</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="images/icons/cpu.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/icons/cpu.ico" type="image/x-icon">
         
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top ">
             <a class="navbar-brand" href="index.html">
-                <img src="images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
+                <img src="./images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,7 +29,7 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Компьютерные комплектующие
+                            Комплектующие
                         </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Процессор</a>
@@ -38,32 +41,108 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#news">Новости</a>
+                        <a class="nav-link" data-value="top" href="#">В начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="about" href="#">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-value="news" href="#news">Новости</a>
                     </li>
                 </ul>
               
             </div>
         </nav>
 
-        <header class="header" style="background-image: url('images/headerback_cpu.jpg')">
-            <!-- <div class="overlay"></div> -->
+        <!-- Main text -->
+        <header class="header" style="background-image: url('./images/headerback_cpu.jpg')">
+            <a class="shift-correction" id="top"></a>
             <div class="container">
-              <div class="description text-left" style="top: 15%; left: 10%;">
-                <h1><font color="#fff", size="20px">
-                    <b>Процессор</b>
-                </font></h1>
+                <div class="description text-left">
+                    <h1><font color="#fff", size="20px"><b>Процессор (ЦПУ) — </b></font></h1>
+                    <p>электронная схема, которая устанавливается на устройство.
+                    Занимается выполнением кода и команд всего программного обеспечения. 
+                    Также, его называют мозгами компьютера. 
+                    От центрального процессора зависит быстродействие всего ПК или мобильного устройства.</p>
                </div>
             </div>
         </header>
 
+        <!-- Main conten -->
+        <header class="about" style="background-image: url('./images/background_cpu.jpg');">
+            <a class="shift-correction" id="about"></a>
+            <div class="description-about">
+                <h1 style=" color: black;"><font size="20px">Характеристики</font></h1>
+                <dl class="dl-horizontal" style=" color: black;">
+                    <dt>Тактовая частота процессора</dt>
+                    <dd>Тактовая частота указывает скорость работы процессора в герцах – количество рабочих операций в секунду. 
+                        Тактовая частота процессора подразделяется на внутреннюю и внешнюю.
+                    </dd>                    
+                    <dd class="row">
+                        <div class="col">
+                            Внутренняя тактовая частота обозначает темп, с которым процессор обрабатывает внутренние команды. 
+                            Чем выше показатель – тем быстрее внешняя тактовая частота.
+                        </div>
+                        <div class="col">
+                            Внешняя тактовая частота определяет, с какой скоростью процессор обращается к оперативной памяти.
+                        </div>
+                    </dd>
 
-        <header class="news" style="background-image: url('images/headerback_news.jpg');">
+                    <dt>Разрядность процессора</dt>
+                    <dd>Разрядность представляет собой предельное количество разрядов двоичного числа, 
+                        над которым может производиться машинная операция передачи информации.                        
+                    </dd>
+
+                    <dt>Сокет (разъем)</dt>
+                    <dd>Гнездовой или щелевой разъем, предназначен для интеграции чипа в схему материнской платы. 
+                        Каждый разъем допускает установку только определенного типа процессоров.
+                    </dd>
+
+                    <dt>Кэш-память процессора</dt>
+                    <dd>Кэш-память – массив сверхскоростной энергозависимой ОЗУ. Является буфером, в котором хранятся данные, 
+                        с которыми процессор взаимодействует чаще или взаимодействовал в процессе последних операций. 
+                        Благодаря этому уменьшается количество обращений процессора к основной памяти. 
+                        Этот вид памяти делится на три уровня: L1, L2, L3. Каждый из уровней отличается по размеру памяти и скорости, и задачи ускорения у них отличаются. 
+                        L1 — самый маленький и быстрый, L3 — самый большой и медленный. К каждому уровню процессор обращается поочередно (от меньшего к большему), 
+                        пока не обнаружит в одном из них нужную информацию. Если ничего не найдено, обращается к оперативной памяти.
+                    </dd>
+
+                    <dt>Встроенное графическое ядро</dt>
+                    <dd>Процессор может быть оснащен графическим ядром, отвечающим за вывод изображения на монитор. 
+                        В последние годы, встроенные видеокарты такого рода хорошо оптимизированы и без проблем тянут основной пакет программ и большинство игр на средних или минимальных настройках. 
+                        Для работы в офисных приложениях и серфинга в интернете, просмотра Full HD видео и игры такой видеокарты вполне достаточно.
+                    </dd>
+                    <dt>Количество ядер (потоков)</dt>
+                    <dd>Для использования офисных приложений и серфинга в интернете достаточно 2 ядер, 
+                        4 ядра требуются для САПР и графических приложений, которым просто необходимо работать в несколько потоков.
+                    </dd>    
+                    <dd>Что касается 8 ядер, очень мало программ поддерживают так много потоков, а значит, такой процессор для большинства приложений просто бесполезен. 
+                        Обычно, чем меньше потоков, тем больше тактовая частота. 
+                        Из этого следует, что если программа, адаптированная под 4 ядра, а не под 8, на 8-ядерном процессе она будет работать медленнее. 
+                        Но этот процессор отличное решение для тех, кому необходимо работать сразу в большом количестве требовательных программ одновременно. 
+                        Равномерно распределив нагрузку по ядрам процессора можно наслаждаться отличной производительностью во всех необходимых программ.
+                    </dd>    
+                    <dd>В большинстве процессоров количество физических ядер соответствует количеству потоков: 8 ядер – 8 потоков. 
+                        Но есть процессоры, где благодаря Hyper-Threading, к примеру, 4-ядерный процессор может обрабатывать 8 потоков одновременно.
+                    </dd>
+                </dl>
+            </div>
+        </header>
+
+        <!-- News -->
+        <header class="news" style="background-image: url('./images/headerback_news.jpg');">
             <a class="shift-correction" id="news"></a>
             <h1><font size="20px"><b>Новости</b></font></h1>
             <div>
                 <rssapp-carousel id="HVnHPFn9cw9l5MKF"></rssapp-carousel>
             </div>
         </header>
+
+        <footer class="page-footer font-small bg-dark" id="sitefooter">
+            <div class="footer-copyright text-center py-3" style="color: aliceblue;">© 2020 Курсовая работа
+                <a href="https://github.com/supernagibator3000/kursach"> Github</a>
+            </div>   
+        </footer>
 
         <a href="#" class="scrollup">Наверх</a>
 
@@ -74,5 +153,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src='js/script.js' type="text/javascript"></script>
         <script src='js/scrollup_script.js' type="text/javascript"></script>
+        <script src='js/scroll.js' type="text/javascript"></script>
     </body>
 </HTML>

@@ -4,11 +4,13 @@
     <title>Компьютерные комплектующие</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/icons/computer.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/icons/computer.ico" type="image/x-icon">
         
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,17 +18,20 @@
   <body>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#top">
-          <img src="images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
+        <a class="navbar-brand" href="#">
+          <img src="./images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" data-value="top" href="#">В начало</a>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Компьютерные комплектующие
+              <a class="nav-link dropdown-toggle" data-value="hardware" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Комплектующие
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="processor.html">Процессор</a>
@@ -38,24 +43,26 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#news">Новости</a>
+              <a class="nav-link" data-value="news" href="#">Новости</a>
             </li>
           </ul>             
         </div>
       </nav>
 
-
-      <header class="header" style="background-image: url('images/headerback.jpg')">
+      <!-- Main text -->
+      <header class="header" style="background-image: url('./images/headerback.jpg')">
+        <a class="shift-correction" id="top"></a>
         <div class="overlay"></div>
         <div class="container">
-          <div class="description text-left">
-            <h1><font color="#3AC1EF"><b>Добро пожаловать</b></font></h1>
+          <div class="description-main-page text-left">
+            <h1><font color="#3AC1EF"><b>Аппаратное обеспечение — </b></font></h1>
+            <p>общее описание для всех механических и электронных компонентов компьютерной системы.</p>
           </div>
         </div>
       </header>
 
     <!-- Hardware cards -->
-      <header class="hardware" style="background-image: url('images/background_build.jpg')">
+      <header class="hardware" style="background-image: url('./images/background_build.jpg')">
         <a class="shift-correction" id="hardware"></a>
         <h1><font size="20px"><b>Комплектующие</b></font></h1>
 
@@ -65,7 +72,7 @@
               <a href="processor.html"><img class="card-img-top" src="images/cpu_card.jpg" alt="CPU image"></a>
               <div class="card-body">
                 <a href="processor.html"><h5 class="card-title">Процессор</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Центральный вычислительный элемент любого компьютера, управляет всеми остальными его элементами.</p>
               </div>
             </div>
           </div>
@@ -75,7 +82,7 @@
               <a href="motherboard.html"><img class="card-img-top" src="images/motherboard_card.jpg" alt="Motherboard image"></a>
               <div class="card-body">
                 <a href="motherboard.html"><h5 class="card-title">Материнская плата</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Сложная многослойная печатная плата, на которой устанавливаются основные компоненты персонального компьютера.</p>
               </div>
             </div>
           </div>
@@ -85,7 +92,7 @@
               <a href="video_card.html"><img class="card-img-top" src="images/gpu_card.jpg" alt="GPU image"></a>
               <div class="card-body">
                 <a href="video_card.html"><h5 class="card-title">Видеокарта</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Устройство, которое переводит определенные данные, расположенные в памяти системы в доступное изображение.</p>
               </div>
             </div>
           </div>
@@ -97,7 +104,7 @@
               <a href="ram.html"><img class="card-img-top" src="images/ram_card.jpg" alt="RAM image"></a>
               <div class="card-body">
                 <a href="ram.html"><h5 class="card-title">Оперативная память</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Энергозависимая часть системы компьютерной памяти, в которой во время работы компьютера хранится выполняемый машинный код.</p>
               </div>
             </div>
           </div>
@@ -107,7 +114,7 @@
               <a href="storage.html"><img class="card-img-top" src="images/hdd_card.jpg" alt="HDD image"></a>
               <div class="card-body">
                 <a href="storage.html"><h5 class="card-title">Накопитель</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Устройсво, позволяющее сохранять информацию на длительное время..</p>
               </div>
             </div>
           </div>
@@ -117,7 +124,7 @@
               <a href="power_supply.html"><img class="card-img-top" src="images/power_supply_card.jpg" alt="Power supply image"></a>
               <div class="card-body">
                 <a href="power_supply.html"><h5 class="card-title">Блок питания</h5></a>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Устройство в задачи которого входит преобразование сетевого переменного напряжения в постоянное и его подача компонентам компьютера.</p>
               </div>
             </div>
           </div>
@@ -125,7 +132,7 @@
       </header>
           
     <!-- News -->
-    <header class="news"  style="background-image: url('images/headerback_news.jpg');">
+    <header class="news"  style="background-image: url('./images/headerback_news.jpg');">
       <a class="shift-correction" id="news"></a>
       <h1><font size="20px"><b>Новости</b></font></h1>
       <div style="padding-bottom: 0%;">
@@ -136,6 +143,14 @@
       </div>
     </header>
 
+
+    <footer class="page-footer font-small bg-dark" id="sitefooter">
+      <div class="footer-copyright text-center py-3" style="color: aliceblue;">© 2020 Курсовая работа
+        <a href="https://github.com/supernagibator3000/kursach"> Github</a>
+      </div>   
+    </footer>
+    
+
     <a href="#" class="scrollup">Наверх</a>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -145,5 +160,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src='js/script.js' type="text/javascript"></script>
     <script src='js/scrollup_script.js' type="text/javascript"></script>
+    <script src='js/scroll.js' type="text/javascript"></script>
   </body>
 </HTML>
