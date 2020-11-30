@@ -35,24 +35,30 @@
     background: #1b1a1f;
     color: #948d87;
 }
-.header{
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
 .description-main-page{
     margin-left: 10%;
     margin-right: 20%;
-    min-height: 65%;
     min-width: 80%;
+    min-height: 65vh;
     position: relative;
-    top: 20%;
     background: #f1f1f1d0;
     padding-top: 2em;
     padding-left: 2em;
     padding-bottom: 2em;
     overflow-wrap:break-word;
+}
+.description-about{
+    margin-left: 10%;
+    margin-right: 20%;
+    min-width: 80%;
+    position: relative;
+    top: 20%;
+    background: #151224d0;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    overflow-wrap:break-word;
+    min-height: 100vh;
 }
 .description-main-page p{
     color:#666;
@@ -64,8 +70,9 @@
     position: relative;
     padding-top: 16vh;
     padding-left: 10%;
-    width: 60%;
+    max-width: 60%;
     padding-bottom: 3%;
+    text-shadow: 1px 1px 5px #000;
 }
 .description p{
     color: #fff;
@@ -73,7 +80,6 @@
     width: 100%;
     line-height: 1.5;
     font-weight: bold;
-    text-shadow: #000 0 0 10px;
 }
 .news{
     background-attachment: fixed;
@@ -115,14 +121,19 @@
     left: 5%;
     max-width: 90%;
 }
-.hardware .row{
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 3%;
-}
 .hardware .card{
-    width: 20rem;
+    margin-top: 2vh;
+    min-width: 5vw;
+    max-width: 35vw;
+    text-align: center;
+}
+@media(max-width:575px){
+    .hardware .card{
+        max-width: 90vw;
+    }
+    .description{
+        max-width: 90%;
+    }
 }
 .about{
     background-attachment: fixed;
@@ -135,14 +146,12 @@
     position: relative;
     max-width: fit-content;
     font-weight: bold;
-    text-shadow: #000 0 0 10px;
 }
 .about h2{
     color: #fff;
     position: relative;
     max-width: fit-content;
     font-weight: bold;
-    text-shadow: #000 0 0 10px;
 }
 .about p{
     color: #fff;
@@ -164,17 +173,12 @@
     font-size: 24px;
     max-width: 90%;
     line-height: 1.5;
-    text-shadow: #000 0 0 10px;
 }
 .about dd{
     padding-left: 3%;
 }
-.description-about{
-    position: relative;
-    left: 12%;
-    max-width: 88%;
-    padding-top: 2%;
-    padding-bottom: 3%;
+.buff{
+    height: 10vh;
 }
 .shift-correction{
     display: block;
