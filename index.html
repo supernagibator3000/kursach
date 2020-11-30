@@ -18,7 +18,7 @@
   <body>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" data-value="top" href="#">
           <img src="./images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,12 +26,9 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" data-value="top" href="#">В начало</a>
-            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-value="hardware" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Комплектующие
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Каталог
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="processor.html">Процессор</a>
@@ -43,6 +40,12 @@
               </div>
             </li>
             <li class="nav-item">
+              <a class="nav-link" data-value="top" href="#">В начало</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-value="hardware" href="#">Комплектующие</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" data-value="news" href="#">Новости</a>
             </li>
           </ul>             
@@ -51,14 +54,15 @@
     
     
       <!-- Main text -->
-      <header class="header" style="background-image: url('./images/headerback.jpg')">
+      <header class="about" style="background-image: url('./images/headerback.jpg')">
         <a class="shift-correction" id="top"></a>
-
+        <div class="buff"></div>
+        <div class="buff"></div>
           <div class="description-main-page text-left">
             <h1><font color="#3AC1EF"><b>Аппаратное обеспечение</b></font></h1>
-            <p>— общее описание для всех механических и электронных компонентов компьютерной системы.</p>
+            <p style="color: rgb(56, 56, 56);">— общее описание для всех механических и электронных компонентов компьютерной системы.</p>
           </div>
-
+          <div class="buff"></div>
       </header>
 
     <!-- Hardware cards -->
@@ -76,7 +80,7 @@
               </div>
             </div>
           </div>
-
+        
           <div class="col-sm">
             <div class="card">
               <a href="motherboard.html"><img class="card-img-top" src="images/motherboard_card.jpg" alt="Motherboard image"></a>
@@ -86,7 +90,9 @@
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="row">
           <div class="col-sm">
             <div class="card">
               <a href="video_card.html"><img class="card-img-top" src="images/gpu_card.jpg" alt="GPU image"></a>
@@ -96,9 +102,7 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="row">
           <div class="col-sm">
             <div class="card">
               <a href="ram.html"><img class="card-img-top" src="images/ram_card.jpg" alt="RAM image"></a>
@@ -108,13 +112,15 @@
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="row">
           <div class="col-sm">
             <div class="card">
               <a href="storage.html"><img class="card-img-top" src="images/hdd_card.jpg" alt="HDD image"></a>
               <div class="card-body">
                 <a href="storage.html"><h5 class="card-title">Накопитель</h5></a>
-                <p class="card-text">Устройсво, позволяющее сохранять информацию на длительное время..</p>
+                <p class="card-text">Устройсво, позволяющее сохранять информацию на длительное время.</p>
               </div>
             </div>
           </div>
@@ -129,6 +135,8 @@
             </div>
           </div>
         </div>
+
+        <div class="buff"></div>
       </header>
           
     <!-- News -->
