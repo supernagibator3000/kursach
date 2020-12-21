@@ -17,17 +17,22 @@
   </head>
   <body>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <a class="navbar-brand" data-value="top" href="#">
           <img src="./images/icons/home_page.ico" width="40px" height="40px" alt="Главная">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
                 Каталог
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -51,25 +56,23 @@
           </ul>             
         </div>
       </nav>
-    
-    
-      <!-- Main text -->
-      <header class="about" style="background-image: url('./images/headerback.jpg')">
-        <a class="shift-correction" id="top"></a>
-        <div class="buff"></div>
-        <div class="buff"></div>
-          <div class="description-main-page text-left">
-            <h1><font color="#3AC1EF"><b>Аппаратное обеспечение</b></font></h1>
-            <p style="color: rgb(56, 56, 56);">— общее описание для всех механических и электронных компонентов компьютерной системы.</p>
-          </div>
-          <div class="buff"></div>
-      </header>
+      
+    <!-- Main text -->
+    <header class="about" style="background-image: url('./images/headerback.jpg')">
+      <a class="shift-correction" id="top"></a>
+      <div class="buff"></div>
+      <div class="buff"></div>
+      <div class="description-main-page text-left">
+        <h1><font color="#3AC1EF"><b>Аппаратное обеспечение</b></font></h1>
+        <p style="color: rgb(56, 56, 56);">— общее описание для всех механических и электронных компонентов компьютерной системы.</p>
+      </div>
+      <div class="buff"></div>
+    </header>
 
     <!-- Hardware cards -->
       <header class="hardware" style="background-image: url('./images/background_build.jpg')">
         <a class="shift-correction" id="hardware"></a>
         <h1><font size="20px"><b>Комплектующие</b></font></h1>
-
         <div class="row">
           <div class="col-sm">
             <div class="card">
@@ -79,8 +82,7 @@
                 <p class="card-text">Центральный вычислительный элемент любого компьютера, управляет всеми остальными его элементами.</p>
               </div>
             </div>
-          </div>
-        
+          </div>        
           <div class="col-sm">
             <div class="card">
               <a href="motherboard.html"><img class="card-img-top" src="images/motherboard_card.jpg" alt="Motherboard image"></a>
@@ -91,7 +93,6 @@
             </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-sm">
             <div class="card">
@@ -102,7 +103,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-sm">
             <div class="card">
               <a href="ram.html"><img class="card-img-top" src="images/ram_card.jpg" alt="RAM image"></a>
@@ -113,7 +113,6 @@
             </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-sm">
             <div class="card">
@@ -124,7 +123,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-sm">
             <div class="card">
               <a href="power_supply.html"><img class="card-img-top" src="images/power_supply_card.jpg" alt="Power supply image"></a>
@@ -135,7 +133,6 @@
             </div>
           </div>
         </div>
-
         <div class="buff"></div>
       </header>
           
@@ -144,16 +141,18 @@
       <a class="shift-correction" id="news"></a>
       <h1><font size="20px"><b>Новости</b></font></h1>
       <div style="padding-bottom: 0%;">
+        <!-- <rssapp-carousel id="5fzdnmesBfHA44dw"></rssapp-carousel> -->
         <rssapp-carousel id="_2WX6Yup1IJYTQCAt"></rssapp-carousel>
       </div>
       <div style="padding-top: 20px;">
+        <!-- <rssapp-carousel id="5fzdnmesBfHA44dw"></rssapp-carousel> -->
         <rssapp-carousel id="_dI0nrRSwqJWqASd3"></rssapp-carousel>
       </div>
     </header>
 
 
     <footer class="page-footer font-small bg-dark" id="sitefooter">
-      <div class="footer-copyright text-center py-3" style="color: aliceblue;">© 2020 Курсовая работа
+      <div class="footer-copyright text-center py-3" style="color: aliceblue;">© 2020 Буланов В.А., Курсовая работа
         <a href="https://github.com/supernagibator3000/kursach"> Github</a>
       </div>   
     </footer>
@@ -166,7 +165,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src='js/script.js' type="text/javascript"></script>
     <script src='js/scrollup_script.js' type="text/javascript"></script>
     <script src='js/scroll.js' type="text/javascript"></script>
   </body>
