@@ -1,9 +1,11 @@
 .navbar{
     background:#1b1a1f;
 }
-.nav-link , .navbar-brand{
-    color: #f4f4f4;
+.nav-link ,.navbar-brand{
     cursor: pointer;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;
 }
 .nav-link{
     margin-right: 1em !important;
@@ -16,7 +18,7 @@
     justify-content: flex-start;
 }
 .navbar-toggler{
-    background:#fff !important;
+    background:#1b1a1f !important;
 }
 .navbar-brand:hover{
     color: #948d87;
